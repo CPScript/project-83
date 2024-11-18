@@ -18,6 +18,19 @@ npm install express helmet express-rate-limit cors
 * start your web server
 `node server.js`
 
+you could also implement a server side script that handles the download process. This way, users can download the file without directly accessing the URL of the .zip file.
+
+``` .php
+<?php
+$file = 'path/to/hidden-folder/package.zip';
+header('Content-Type: application/zip');
+header('Content-Disposition: attachment; filename="'.basename($file).'"');
+header('Content-Length: ' . filesize($file));
+readfile($file);
+exit;
+?>
+```
+
 
 ---
 
