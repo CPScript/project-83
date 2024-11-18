@@ -17,3 +17,8 @@ npm install express helmet express-rate-limit cors
 
 * start your web server
 `node server.js`
+
+
+---
+
+add the code in the doc/webpage/robot.txt to your page's robot.txt script to hide it from audits, once hidden you can still install the package using the compiler
