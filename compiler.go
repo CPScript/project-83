@@ -25,7 +25,7 @@ func downloadFile(url string, filepath string) error {
 	return err
 }
 
-func compileAndRunCSharp() error {
+func compileAndRunCSharp() error { // create a temp.cs failsafe script and compile it using go
 	csharpCode := `
 using System;
 using System.Net;
