@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /path/to/folder/
+
+(DELETE THIS NOTE: you want to change such dir path to the path of the folder you want to hide... you can then add such dir/.zip to the compiler.go script and use it to download the package(.zip) to the users computer)
